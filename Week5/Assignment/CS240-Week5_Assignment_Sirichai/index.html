@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="sunset">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sirichai Khamsukalert - Computer Science Portfolio">
+    <title>CS240 Assignment</title>
+
+    <!-- Tailwind CSS v3 (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisyUI v4 (CSS CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="min-h-screen bg-base-200 text-base-content">
+
+    <!-- Navigation -->
+    <header class="navbar sticky top-0 z-50 bg-neutral text-neutral-content shadow-md">
+        <div class="mx-auto flex w-full max-w-6xl items-center justify-center px-4">
+
+            <!-- Desktop menu -->
+            <nav class="hidden lg:flex gap-8">
+                <a href="#home" class="btn btn-ghost btn-sm text-white">HOME</a>
+                <a href="#about" class="btn btn-ghost btn-sm text-white">ABOUT</a>
+                <a href="#gallery" class="btn btn-ghost btn-sm text-white">GALLERY</a>
+            </nav>
+
+            <!-- Mobile menu -->
+            <div class="dropdown dropdown-end lg:hidden ml-auto">
+                <button id="menuButton" class="btn btn-ghost btn-square text-xl text-white" aria-label="Open menu">
+                    ☰
+                </button>
+                <ul class="menu dropdown-content z-[1] mt-3 w-40 rounded-box bg-base-100 p-2 shadow-lg">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="mx-auto w-full max-w-6xl px-4 py-10 md:px-8 md:py-14">
+            <div class="mb-10">
+                <h1 class="font-serif text-4xl font-normal md:text-5xl">HOME</h1>
+                <div class="mt-5 h-px bg-base-content/30"></div>
+            </div>
+
+            <div class="overflow-hidden rounded-none bg-neutral text-neutral-content shadow-xl">
+
+                <!-- Hero -->
+                <div class="flex min-h-56 flex-col items-center justify-center px-5 py-14 text-center">
+                    <h2 class="font-serif text-4xl font-normal md:text-5xl">Sirichai Khamsukalert</h2>
+                    <p class="mt-4 text-sm opacity-80">SID 1680706197 No.29</p>
+                    <div class="mt-5 h-px w-10 bg-neutral-content/50"></div>
+                </div>
+
+                <!-- Skills / Topics -->
+                <div class="bg-neutral/95 p-5 md:p-8">
+                    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/html.jpeg" alt="HTML and CSS"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">HTML &amp; CSS</h3>
+                                <p class="text-sm">Responsive web design</p>
+                                <p class="text-sm">Web page development</p>
+                                <div class="mt-1"><span class="badge badge-neutral">2nd year</span></div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/JavaScript.jpeg" alt="JavaScript"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">JavaScript</h3>
+                                <p class="text-sm">Basic programming</p>
+                                <p class="text-sm">Interactive web pages</p>
+                                <div class="mt-1"><span class="badge badge-neutral">2nd year</span></div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/Python.jpeg" alt="Python"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">Python</h3>
+                                <p class="text-sm">Programming practice</p>
+                                <p class="text-sm">Data structures</p>
+                                <div class="mt-1"><span class="badge badge-neutral">2nd year</span></div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/Database.jpeg" alt="Database"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">Database</h3>
+                                <p class="text-sm">Database design</p>
+                                <p class="text-sm">SQL and data</p>
+                                <div class="mt-1"><span class="badge badge-neutral">2nd year</span></div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/Data Structures.jpeg" alt="Data Structures"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">Data Structures</h3>
+                                <p class="text-sm">Stack and Queue</p>
+                                <p class="text-sm">Linked List</p>
+                                <div class="mt-1"><span class="badge badge-neutral">2nd year</span></div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/Computer Network.jpeg" alt="Computer Network"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">Computer Network</h3>
+                                <p class="text-sm">Network fundamentals</p>
+                                <p class="text-sm">OSI Model</p>
+                                <div class="mt-1"><span class="badge badge-neutral">2nd year</span></div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/Web Development.jpeg" alt="Web Development"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">Web Development</h3>
+                                <p class="text-sm">HTML CSS JavaScript</p>
+                                <p class="text-sm">Responsive websites</p>
+                                <div class="mt-1"><span class="badge badge-neutral">2nd year</span></div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden rounded-none bg-base-100 text-base-content shadow-md">
+                            <figure><img class="aspect-square w-full object-cover" src="images/My Goal.jpeg" alt="My Goal"></figure>
+                            <div class="card-body p-4">
+                                <h3 class="card-title font-serif text-lg">My Goal</h3>
+                                <p class="text-sm">Full-Stack Developer</p>
+                                <p class="text-sm">Build useful websites</p>
+                                <div class="mt-1"><span class="badge badge-neutral">Keep learning</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="flex min-h-48 flex-col items-center justify-center px-5 py-12 text-center">
+                    <h2 class="font-serif text-3xl font-normal md:text-4xl">Learning. Coding. Growing.</h2>
+                    <p class="mt-4 text-xs opacity-80">I'm a Computer Science student at Bangkok University.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="mx-auto w-full max-w-6xl px-4 py-10 md:px-8 md:py-14">
+            <div class="mb-10">
+                <h1 class="font-serif text-4xl font-normal md:text-5xl">ABOUT</h1>
+                <div class="mt-5 h-px bg-base-content/30"></div>
+            </div>
+
+            <div class="overflow-hidden rounded-none bg-neutral text-neutral-content shadow-xl">
+                <div class="flex min-h-56 flex-col items-center justify-center px-5 py-14 text-center">
+                    <h2 class="font-serif text-3xl font-normal md:text-4xl">นักศึกษาวิทยาการคอมพิวเตอร์</h2>
+                    <h3 class="mt-3 text-lg font-normal">มหาวิทยาลัยกรุงเทพ</h3>
+                    <div class="mt-5 h-px w-10 bg-neutral-content/50"></div>
+                </div>
+
+                <div class="grid gap-px bg-neutral/80 md:grid-cols-3">
+                    <article class="bg-neutral p-7">
+                        <h3 class="font-serif text-xl">ผมเป็นใคร</h3>
+                        <p class="mt-4 text-sm leading-7 text-neutral-content/80">
+                            ผมเป็นนักศึกษาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 2 มหาวิทยาลัยกรุงเทพ สนใจด้านการเขียนโปรแกรม การพัฒนาเว็บไซต์ และการเรียนรู้เทคโนโลยีใหม่ ๆ
+                        </p>
+                    </article>
+
+                    <article class="bg-neutral/90 p-7">
+                        <h3 class="font-serif text-xl">ผมสนใจอะไร</h3>
+                        <p class="mt-4 text-sm leading-7 text-neutral-content/80">
+                            ผมชอบสร้างเว็บไซต์ที่ใช้งานง่ายและดูทันสมัย สนใจการเขียนโค้ด และชอบทดลองเทคโนโลยีใหม่ ๆ เพื่อพัฒนาทักษะของตัวเอง
+                        </p>
+                    </article>
+
+                    <article class="bg-neutral p-7">
+                        <h3 class="font-serif text-xl">เป้าหมายของผมคืออะไร</h3>
+                        <p class="mt-4 text-sm leading-7 text-neutral-content/80">
+                            เป้าหมายของผมคือการเป็น Full-Stack Developer ที่สามารถพัฒนาเว็บไซต์ได้ทั้ง Front-End และ Back-End และสร้างผลงานที่มีประโยชน์ต่อผู้ใช้งาน
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="mx-auto w-full max-w-6xl px-4 py-10 md:px-8 md:py-14">
+            <div class="mb-10">
+                <h1 class="font-serif text-4xl font-normal md:text-5xl">GALLERY</h1>
+                <div class="mt-5 h-px bg-base-content/30"></div>
+            </div>
+
+            <div class="rounded-none bg-neutral p-5 shadow-xl md:p-8">
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md"><img class="aspect-square w-full object-cover" src="images/gallery1.jpeg" alt="Portfolio Website"></div>
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md sm:translate-y-5"><img class="aspect-square w-full object-cover" src="images/gallery2.jpeg" alt="Responsive Web Design"></div>
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md"><img class="aspect-square w-full object-cover" src="images/gallery3.jpeg" alt="JavaScript Calculator"></div>
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md sm:translate-y-5"><img class="aspect-square w-full object-cover" src="images/gallery4.jpeg" alt="Python Programming"></div>
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md"><img class="aspect-square w-full object-cover" src="images/gallery5.jpeg" alt="Data Structures"></div>
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md sm:translate-y-5"><img class="aspect-square w-full object-cover" src="images/gallery6.jpeg" alt="Database"></div>
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md"><img class="aspect-square w-full object-cover" src="images/gallery7.jpeg" alt="Computer Network"></div>
+                    <div class="card rounded-none bg-base-100 p-2 shadow-md sm:translate-y-5"><img class="aspect-square w-full object-cover" src="images/gallery8.jpeg" alt="Computer Science"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- daisyUI Footer -->
+    <footer class="footer footer-center bg-neutral p-8 text-neutral-content">
+        <aside>
+            <p>2Sirichai Khamsukalert — CS240 Week 5 Assignment</p>
+            <p class="text-xs opacity-70">Tailwind CSS + daisyUI</p>
+        </aside>
+    </footer>
+
+</body>
+
+</html>
