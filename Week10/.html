@@ -1,0 +1,235 @@
+<!-- 1.1 โครงสร้าง HTML พื้นฐาน -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>This is my website.</p>
+</body>
+</html>
+<!-- <!DOCTYPE html>ประกาศว่าใช้ HTML5
+<html>ครอบคลุมเอกสาร HTML
+<head>เก็บข้อมูลเกี่ยวกับหน้าเว็บ
+<meta charset="UTF-8">กำหนดการเข้ารหัสตัวอักษร
+<title>ชื่อที่แสดงบนแท็บเบราว์เซอร์
+<body>เนื้อหาที่แสดงบนหน้าเว็บ
+<h1>หัวข้อระดับหลัก
+<p>ย่อหน้า -->
+
+<!-- 1.2 Tag ที่ควรจำ -->
+<h1>Main Heading</h1>
+<h2>Subheading</h2>
+<p>Paragraph</p>
+<strong>Important text</strong>
+<em>Emphasized text</em>
+<!-- <h1> ถึง <h6> — หัวข้อจากระดับหลักไปยังระดับย่อย
+<p> — ย่อหน้า
+<strong> — เน้นความสำคัญ
+<em> — เน้นข้อความ -->
+
+<!-- ลิงก์และรูปภาพ -->
+<a href="https://example.com">Visit</a>
+<img src="cat.jpg" alt="A cat">
+<!-- <a> — สร้างลิงก์ โดย href กำหนดปลายทาง
+<img> — แสดงรูปภาพ โดย src กำหนดตำแหน่งรูป
+alt — ข้อความทดแทนรูปภาพ -->
+
+<!-- การจัดกลุ่มเนื้อหา -->
+<div class="card">
+    <p>Hello</p>
+</div>
+<span>Text</span>
+<!-- <div> — กล่องสำหรับจัดกลุ่มเนื้อหา มักเป็น block
+<span> — จัดกลุ่มข้อความบางส่วน มักเป็น inline -->
+
+2. HTML Form และ Input
+<form>
+    <label for="username">Username</label>
+    <input id="username" type="text">
+
+    <label for="email">Email</label>
+    <input id="email" type="email">
+
+    <button type="submit">Submit</button>
+</form>
+<!-- <form>รวมช่องกรอกข้อมูลเพื่อส่งข้อมูล
+<label>ป้ายชื่อของช่องกรอก
+for="username"เชื่อม Label กับ element ที่มี ID ตรงกัน
+type="text"กรอกข้อความทั่วไป
+type="email"ช่องกรอกอีเมล
+type="password"ช่องกรอกรหัสผ่านที่ซ่อนตัวอักษร
+type="number"ช่องกรอกตัวเลข
+type="checkbox"เลือกได้หลายรายการโดยทั่วไป
+type="radio"เลือกหนึ่งตัวเลือกในกลุ่มเดียวกัน
+type="submit"ส่งฟอร์ม -->
+
+ตัวอย่าง Attribute ที่พบบ่อย:
+ <input type="text" id="name"
+       class="input-box" placeholder="Your name"
+       required>
+       id — ใช้ระบุ element ที่ไม่ควรซ้ำกันในหน้าเดียว
+<!-- class — ใช้จัดกลุ่ม element หลายตัว
+placeholder — ข้อความตัวอย่างในช่องกรอก
+required — กำหนดให้ต้องกรอกก่อนส่งฟอร์ม -->
+
+3.1 วิธีเขียน CSS
+<p class="message">Hello</p>
+.message {
+    color: blue;
+    font-size: 20px;
+}
+
+3.2 Selector ที่ต้องแยกให้ออก
+p {
+    color: black;
+}
+
+.note {
+    color: blue;
+}
+
+#header {
+    color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+<!-- pทุก element ที่เป็น Tag p
+.noteทุก element ที่มี class note
+#headerelement ที่มี ID header
+*ทุก element -->
+
+3.3 Inline, Internal และ External CSS
+<p style="color: red;">Hello</p>
+
+<style>
+  p { color: red; }
+</style>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- 3.4 CSS Properties ที่ควรรู้
+Propertyความหมาย
+colorสีตัวอักษร
+background-colorสีพื้นหลัง
+font-sizeขนาดตัวอักษร
+font-familyแบบอักษร
+font-weightความหนาตัวอักษร
+text-alignจัดแนวข้อความ
+width / heightความกว้าง / ความสูง
+marginระยะห่างด้านนอก
+paddingระยะห่างด้านใน
+borderเส้นขอบborder-radiusความโค้งของมุม
+displayวิธีจัดแสดง element
+positionวิธีวางตำแหน่ง
+gapระยะห่างระหว่างสมาชิกใน Layout ที่รองรับ -->
+ตัวอย่าง
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+5. Display, Position และ Flexbox
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+<!-- block — เริ่มบรรทัดใหม่ตามพฤติกรรมปกติ
+inline — อยู่ในบรรทัดเดียวกันตามพื้นที่ที่ใช้
+inline-block — อยู่ในบรรทัดเดียวกัน แต่กำหนดขนาดได้ตามปกติของกล่อง
+flex — ใช้จัด Layout ด้วย Flexbox
+grid — ใช้จัด Layout เป็นแถวและคอลัมน์
+none — ไม่แสดง element และไม่กินพื้นที่ใน Layout -->
+
+.box {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+<!-- staticค่าเริ่มต้น อยู่ตามลำดับปกติ
+relativeเลื่อนจากตำแหน่งเดิม โดยยังคงพื้นที่เดิมไว้
+absoluteวางตาม containing block ที่ใช้อ้างอิง โดยมักอิง ancestor ที่มี position
+fixedยึดกับ viewport โดยทั่วไปยังอยู่ตำแหน่งเดิมขณะเลื่อนหน้า
+stickyเลื่อนไปตามหน้าและยึดเมื่อถึงเงื่อนไขที่กำหนด -->
+
+<div class="container">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</div>
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+<!-- display: flexเปิดใช้งาน Flexbox
+flex-direction: rowเรียงตามแนวนอน
+flex-direction: columnเรียงตามแนวตั้ง
+justify-contentจัดแนวตาม Main Axis
+align-itemsจัดแนวตาม Cross Axis
+gapเว้นช่องว่างระหว่างสมาชิก
+flex-wrap: wrapอนุญาตให้ขึ้นบรรทัดใหม่
+ค่าที่ควรรู้:
+justify-content: center — จัดกึ่งกลางตาม Main Axis
+justify-content: space-between — กระจายสมาชิก โดยเว้นพื้นที่ระหว่างกัน
+align-items: center — จัดกึ่งกลางตาม Cross Axis
+flex-direction: column — เปลี่ยน Main Axis เป็นแนวตั้ง -->
+
+5.4 CSS Grid และ Responsive Design
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+<!-- grid-template-columns กำหนดจำนวนและขนาดคอลัมน์ ส่วน 1fr หมายถึงส่วนแบ่งพื้นที่ว่างหนึ่งหน่วย -->
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+<!-- Media Query นี้ทำให้ .container แสดงหนึ่งคอลัมน์เมื่อความกว้าง viewport ไม่เกิน 600px
+Flexbox — เหมาะกับการจัดวางในหนึ่งมิติ
+Grid — เหมาะกับการจัดวางเป็นสองมิติ
+Media Query — ใช้เปลี่ยน CSS ตามเงื่อนไข เช่น ขนาดหน้าจอ -->
+
+Part 2 — JavaScript สำหรับ Midterm
+<p id="message">Hello</p>
+<button id="btn">Click Me</button>
+
+<script>
+    document.getElementById("btn").addEventListener("click", function() {
+        document.getElementById("message").textContent = "Welcome!";
+    });
+</script>
+<!-- เมื่อกดปุ่ม Click Me ข้อความ Hello จะเปลี่ยนเป็น Welcome! -->
+
+DOM — สิ่งที่ต้องเข้าใจให้ได้
+<!-- เลือก HTML element -->
+document.getElementById("title");
+<!-- เลือก element จาก id -->
+document.querySelector(".card");
+<!-- เลือก element แรกที่ตรงกับ CSS selector -->
+document.querySelectorAll(".card");
+<!-- เลือก element ทุกตัวที่ตรงกับ CSS selector โดยได้ NodeList -->
+document.getElementsByClassName("card");
+<!-- เลือก element ที่มี class ที่กำหนด โดยได้ HTMLCollection -->
